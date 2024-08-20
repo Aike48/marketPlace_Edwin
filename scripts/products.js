@@ -4,7 +4,7 @@ export const productos = [
         name: "Figura de mona china roja",
         image: "img/fig1.png",
         precio: "",
-        description: "Esta es una figura de un personaje",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit Aperiam.",
         quantity: ""
     },
 
@@ -12,7 +12,7 @@ export const productos = [
         id: "2",
         name: "Otra figura de mona china",
         image: "img/fig2.png",
-        description: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit Aperiam.",
         quantity: ""
     },
     
@@ -20,7 +20,7 @@ export const productos = [
         id: "3",
         name: "Figura de Sans",
         image: "img/SansFig.jpg",
-        description: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit Aperiam.",
         quantity: ""
     },
 
@@ -28,7 +28,7 @@ export const productos = [
         id: "4",
         name: "Lámpara de Hollow knight",
         image: "img/HollowLampara.JPG",
-        description: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit Aperiam.",
         quantity: ""
     },
 
@@ -60,7 +60,7 @@ export const productos = [
         id: "8",
         name: "Figura de Jotaro",
         image: "img/JotaroFig.PNG",
-        description: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit Aperiam.",
         quantity: ""
     },
 
@@ -68,7 +68,7 @@ export const productos = [
         id: "9",
         name: "Figura de Kakyoin",
         image: "img/KakyoinFig.PNG",
-        description: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit Aperiam.",
         quantity: ""
     },
 
@@ -92,7 +92,7 @@ export const productos = [
         id: "12",
         name: "Cuadro de Sans",
         image: "img/sansPicture.jpg",
-        description: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit Aperiam.",
         quantity: ""
     },
 
@@ -100,7 +100,7 @@ export const productos = [
         id: "13",
         name: "",
         image: "",
-        description: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit Aperiam.",
         quantity: ""
     },
 
@@ -108,7 +108,7 @@ export const productos = [
         id: "14",
         name: "",
         image: "",
-        description: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit Aperiam.",
         quantity: ""
     },
 
@@ -132,7 +132,7 @@ export const productos = [
         id: "17",
         name: "",
         image: "",
-        description: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit Aperiam.",
         quantity: ""
     },
 
@@ -140,7 +140,7 @@ export const productos = [
         id: "18",
         name: "",
         image: "",
-        description: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit Aperiam.",
         quantity: ""
     },
 
@@ -148,7 +148,7 @@ export const productos = [
         id: "19",
         name: "",
         image: "",
-        description: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit Aperiam.",
         quantity: ""
     },
 
@@ -156,7 +156,7 @@ export const productos = [
         id: "20",
         name: "",
         image: "",
-        description: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit Aperiam.",
         quantity: ""
     },
 
