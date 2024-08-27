@@ -5,7 +5,7 @@ export const productos = [
         image: "img/fig1.png",
         precio: "",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit Aperiam.",
-        quantity: ""
+        quantity: 1
     },
 
     {
@@ -13,7 +13,7 @@ export const productos = [
         name: "Otra figura de mona china",
         image: "img/fig2.png",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit Aperiam.",
-        quantity: ""
+        quantity: 1
     },
     
     {
@@ -21,7 +21,7 @@ export const productos = [
         name: "Figura de Sans",
         image: "img/SansFig.jpg",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit Aperiam.",
-        quantity: ""
+        quantity: 1
     },
 
     {
@@ -29,31 +29,31 @@ export const productos = [
         name: "Lámpara de Hollow knight",
         image: "img/HollowLampara.JPG",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit Aperiam.",
-        quantity: ""
+        quantity: 1
     },
 
     {
         id: "5",
         name: "Camisa de Hollow Knight",
         image: "img/HollowT-shirt.jpg",
-        description: "",
-        quantity: ""
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit Aperiam.",
+        quantity: 1
     },
 
     {
         id: "6",
         name: "Camisón de Hollow Knight",
         image: "img/HollowT-shirt2.PNG",
-        description: "",
-        quantity: ""
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit Aperiam.",
+        quantity: 1
     },
 
     {
         id: "7",
         name: "Figura de Itadori",
         image: "img/ItadoriFig.jpg",
-        description: "",
-        quantity: ""
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit Aperiam.",
+        quantity: 1
     },
 
     {
@@ -61,7 +61,7 @@ export const productos = [
         name: "Figura de Jotaro",
         image: "img/JotaroFig.PNG",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit Aperiam.",
-        quantity: ""
+        quantity: 1
     },
 
     {
@@ -69,23 +69,23 @@ export const productos = [
         name: "Figura de Kakyoin",
         image: "img/KakyoinFig.PNG",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit Aperiam.",
-        quantity: ""
+        quantity: 1
     },
 
     {
         id: "10",
         name: "Figura de Rengoku",
         image: "img/RengokuFig.jpg",
-        description: "",
-        quantity: ""
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit Aperiam.",
+        quantity: 1
     },
 
     {
         id: "11",
         name: "Llavero de Sans",
         image: "img/SansLlavero.jpg",
-        description: "",
-        quantity: ""
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit Aperiam.",
+        quantity: 1
     },
 
     {
@@ -93,7 +93,7 @@ export const productos = [
         name: "Cuadro de Sans",
         image: "img/sansPicture.jpg",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit Aperiam.",
-        quantity: ""
+        quantity: 1
     },
 
     {
@@ -101,7 +101,7 @@ export const productos = [
         name: "",
         image: "",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit Aperiam.",
-        quantity: ""
+        quantity: 1
     },
 
     {
@@ -109,23 +109,23 @@ export const productos = [
         name: "",
         image: "",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit Aperiam.",
-        quantity: ""
+        quantity: 1
     },
 
     {
         id: "15",
         name: "",
         image: "",
-        description: "",
-        quantity: ""
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit Aperiam.",
+        quantity: 1
     },
 
     {
         id: "16",
         name: "",
         image: "",
-        description: "",
-        quantity: ""
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit Aperiam.",
+        quantity: 1
     },
 
     {
@@ -133,7 +133,7 @@ export const productos = [
         name: "",
         image: "",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit Aperiam.",
-        quantity: ""
+        quantity: 1
     },
 
     {
@@ -141,7 +141,7 @@ export const productos = [
         name: "",
         image: "",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit Aperiam.",
-        quantity: ""
+        quantity: 1
     },
 
     {
@@ -149,7 +149,7 @@ export const productos = [
         name: "",
         image: "",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit Aperiam.",
-        quantity: ""
+        quantity: 1
     },
 
     {
@@ -157,7 +157,7 @@ export const productos = [
         name: "",
         image: "",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit Aperiam.",
-        quantity: ""
+        quantity: 1
     },
 
 ]

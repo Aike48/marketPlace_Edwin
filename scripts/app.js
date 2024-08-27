@@ -1,41 +1,8 @@
 import { productos } from './products.js';
 
-document.addEventListener('DOMContentLoaded', function() {
-// Importamos el array de productos desde otro módulo
-
-// Array para almacenar los productos del carrito
 let carrito = [];
 
-// Función para agregar un producto al carrito
-function agregarAlCarrito(productoId) {
-    // Buscamos si el producto ya está en el carrito
-    const productoEnCarrito = carrito.find(prod => prod.id === productoId);
-
-    if (productoEnCarrito) {
-        // Si ya está en el carrito, incrementamos la cantidad
-        productoEnCarrito.cantidad++;
-    } else {
-        // Si no está, lo agregamos al carrito con cantidad 1
-        const producto = productos.find(prod => prod.id === productoId);
-        carrito.push({ ...producto, cantidad: 1 });
-    }
-
-    // Actualizamos el ícono del carrito para mostrar el círculo rojo
-    actualizarCarritoIcono();
-}
-
-// Función para actualizar el ícono del carrito
-function actualizarCarritoIcono() {
-    const carritoIcon = document.querySelector('.material-symbols-outlined');
-    if (carrito.length > 0) {
-        carritoIcon.classList.add('con-productos'); // Añade una clase especial para el círculo rojo
-    } else {
-        carritoIcon.classList.remove('con-productos');
-    }
-}
-
-// Función para crear los elementos HTML de cada producto
-function renderProducto(producto) {
+function renderCardProduct(producto) {
     // Creamos el contenedor del producto
     const productDiv = document.createElement('div');
     productDiv.className = 'product';
@@ -58,6 +25,7 @@ function renderProducto(producto) {
     // Creamos el botón
     const button = document.createElement('button');
     button.textContent = '+';
+    //button.id = producto.id;
     // Evento para agregar al carrito
     button.addEventListener('click', () => agregarAlCarrito(producto.id));
 
@@ -81,12 +49,47 @@ function renderProducto(producto) {
     return productDiv;
 }
 
+//document.addEventListener('DOMContentLoaded', function() {
+    const path = window.location.pathname;
+
+ 
+
+function agregarAlCarrito(productoId) {
+    // Buscamos si el producto ya está en el carrito
+    const productoEnCarrito = carrito.find(prod => prod.id === productoId);
+
+    if (productoEnCarrito) {
+        productoEnCarrito.quantity++;
+        console.log("producto" + productoId + "sumado")
+    } else {
+        // Si no está, lo agregamos al carrito con cantidad 1
+        const producto = productos.find(prod => prod.id === productoId);
+        carrito.push({ ...producto, quantity: 1});
+    
+    }
+
+    actualizarCarritoIcono();
+}
+
+
+function actualizarCarritoIcono() {
+    const carritoIcon = document.querySelector('.material-symbols-outlined');
+    if (carrito.length > 0) {
+        carritoIcon.classList.add('con-productos'); // Añade una clase especial para el círculo rojo
+    } else {
+        carritoIcon.classList.remove('con-productos');
+    }
+}
+
+// Función para crear los elementos HTML de cada producto
+
+
 // Función para renderizar todos los productos
-function renderProductos(productos) {
+function renderAllProducts(productos) {
     const productosContainer = document.getElementById('productosContainer');
 
     productos.forEach(producto => {
-        const productoHTML = renderProducto(producto);
+        const productoHTML = renderCardProduct(producto);
         productosContainer.appendChild(productoHTML);
     });
 }
@@ -94,16 +97,29 @@ function renderProductos(productos) {
 // Función para navegar a la página del carrito
 function irAlCarrito() {
     if (carrito.length > 0) {
-        window.location.href = 'templates/car.html';
+        window.location.href = 'car.html';
     }
-}
+} 
 
-// Añadir evento al ícono del carrito para redirigir al carrito
-document.querySelector('.material-symbols-outlined').addEventListener('click', irAlCarrito);
+    if (path.includes('index.html')) {
+        renderAllProducts(productos);
+        const carritoIcon = document.querySelector('.material-symbols-outlined');
+        if (carritoIcon) {
+        carritoIcon.addEventListener('click', irAlCarrito);
+    } else {
+        console.error('No se encontró el ícono del carrito.');
+    }
 
-// Llamamos a la función para renderizar los productos
-renderProductos(productos);
+    }
 
 
-});
-export { carrito };  // Exportamos el carrito para usarlo en la página del carrito
+//});
+export { carrito, renderCardProduct };  // Exportamos el carrito para usarlo en la página del carrito
+
+function prueba (){
+    if (carrito.length >0){
+    console.log (carrito);}
+    else {console.log('no hay nada pero sirve')}
+    }
+
+prueba();
